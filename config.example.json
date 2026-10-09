@@ -1,0 +1,16 @@
+{
+  "turn": {
+    "signalingServer": "YOUR_PLATFORM_TCP_HOST",
+    "signalingPort": 50239,
+    "mediaServer": "DETECTED_CONTAINER_IPV4",
+    "mediaPort": 47998,
+    "iceServerConfiguration": {
+      "iceTransportPolicy": "relay",
+      "iceServers": [{
+        "urls": "turn:YOUR_PLATFORM_TCP_HOST:27645?transport=tcp",
+        "username": "CLIENT_EXPORT_USERNAME",
+        "credential": "CLIENT_EXPORT_CREDENTIAL"
+      }]
+    }
+  }
+}
